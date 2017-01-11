@@ -1,0 +1,239 @@
+body{
+	margin: auto;
+}
+
+#banner{
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	background-color: #5A5D85;
+	opacity: 1;
+	z-index: 1;
+}
+
+#banner h1{
+	position: absolute;
+	left: 100px;
+	top: 0px;
+	z-index: 2;
+}
+
+#banner h3{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+}
+
+#banner #account-title{
+	position: absolute;
+	right: 4.7%;
+	bottom: -5px;
+}
+
+#banner #explorer-title{
+	position: absolute;
+	right: 10.5%;
+	bottom: -5px;
+}
+
+#banner #logo{
+	position: absolute;
+	left: 250px;
+	top: 10px;
+}
+
+#banner #search-bar{
+	position: absolute;
+	top: 12px;
+	left: 28%;
+	width: 300px;
+	height: 50px;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	border-bottom: 2px solid silver;
+	background-color: #5A5D85;
+	color: white;
+	z-index: 2;
+	padding-left: 10px;
+	padding-right: 40px;
+	font-weight: bold;
+	font-size: 20px;
+	-moz-appearance:    textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+}
+
+#banner #search-icon{
+	position: absolute;
+	right: 50%;
+	top: 22px;
+	width: 32px;
+	height: 32px;
+	z-index: 2;
+}
+
+#banner #account-icon{
+	position: absolute;
+	top: 5px;
+	right: 5%;
+	z-index: 2;
+	width: 48px;
+	height: 48px;
+}
+
+#banner #explorer-icon{
+	position: absolute;
+	top: 5px;
+	right: 12%;
+	z-index: 2;
+	width: 48px;
+	height: 48px;
+}
+
+#wallpaper{
+	position: absolute;
+	width: 100%;
+	height: 95%;
+}
+
+#wallpaper h1{
+	position: absolute;
+	top: 30%;
+	left: 33%;
+	font-size: 4em;
+	z-index: 2;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#wallpaper h3{
+	position: absolute;
+	top: 47%;
+	left: 45%;
+	z-index: 2;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#wallpaper img{
+	position: absolute;
+	top: 80px;
+	width: 100%;
+	height: 90%;
+}
+
+#wallpaper #login{
+	position: absolute;
+	top: 25%;
+	left: 6%;
+	width: 300px;
+	height: 300px;
+	background-color: white;
+	opacity: 0.8;
+	border-radius: 3px;
+}
+
+#login h1{
+	position: absolute;
+	top: -3%;
+	left: 23%;
+	font-size: 1.5em;
+	color: black;
+	opacity: 0.8;
+}
+
+#login #facebook-icon{
+	position: absolute;
+	top: 20%;
+	left: 5%;
+	width: 48px;
+	height: 48px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 75%;
+	background-color: #3b5999;
+	opacity: 0.8;
+}
+
+#login #facebook-title{
+	position: absolute;
+	top: 26%;
+	right: 10%;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+}
+
+#login #google-icon{
+	position: absolute;
+	top: 40%;
+	left: 5%;
+	width: 48px;
+	height: 48px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 75%;
+	background-color: #d95032;
+	opacity: 0.8;
+}
+
+#login #google-title{
+	position: absolute;
+	top: 46%;
+	right: 10%;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+}
+
+#login #mail-icon{
+	position: absolute;
+	top: 60%;
+	left: 5%;
+	width: 48px;
+	height: 48px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 75%;
+	background-color: #3498db;
+	opacity: 0.8;
+}
+
+#login #mail-title{
+	position: absolute;
+	top: 66%;
+	right: 20%;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+}
+
+#login hr{
+	margin-top: 75%;
+	width: 90%;
+}
+
+#login label{
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	text-transform: uppercase;
+	left: 15px;
+	bottom: 20px;
+}
+
+#login a{
+	color: #E47516;
+}
+
