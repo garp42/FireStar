@@ -240,13 +240,13 @@ body{
 
 #top{
 	position: absolute;
-	top: 650px;
+	top: 100%;
 	left: 100px;
 	height: 200px;
 	width: 300px;
 	border-radius: 3px;
 	background-color: white;
-	opacity: 0.5;
+	opacity: 1;
 }
 
 #top h3{
@@ -255,7 +255,7 @@ body{
 	left: 5%;
 	font-size: 1em;
 	color: black;
-	opacity: 0.8;
+	opacity: 0.5;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -294,13 +294,13 @@ body{
 
 #category{
 	position: absolute;
-	top: 880px;
+	top: 130%;
 	left: 100px;
-	height: 200px;
+	height: 500px;
 	width: 300px;
 	border-radius: 3px;
 	background-color: white;
-	opacity: 0.5;
+	opacity: 1;
 }
 
 #category h3{
@@ -309,6 +309,86 @@ body{
 	left: 5%;
 	font-size: 1em;
 	color: black;
-	opacity: 0.8;
+	opacity: 0.5;
 	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#contain{
+	position: absolute;
+	top: 100%;
+	left: 450px;
+	height: 700px;
+	width: 60%;
+	border-radius: 3px;
+	background-color: white;
+	opacity: 1;
+}
+
+#contain-ctn{
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 200px;
+	height: 321px;
+}
+
+#contain-ctn img{
+	width: 200px;
+	height: 250px;
+}
+
+#contain-ctn h3{
+	text-align: center;
+	margin-top: 3px;
+	font-family: 'Fjalla One', sans-serif;
+	text-transform: uppercase;
+}
+
+#contain-ctn span{
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+
+#contain-ctn #contain-view{
+	position: absolute;
+	left: 15px;
+	height: 16px;
+	width: 16px;
+	bottom: 15px;
+}
+
+#contain-ctn #contain-view-title{
+	position: absolute;
+	left: 35px;
+	bottom: 15px;
+}
+
+#contain-ctn #contain-comment{
+	position: absolute;
+	left: 90px;
+	height:16px;
+	width: 16px;
+	bottom: 15px;
+}
+
+#contain-ctn #contain-comment-title{
+	position: absolute;
+	left: 110px;
+	bottom: 15px;
+}
+
+#contain-ctn #contain-like{
+	position: absolute;
+	left: 150px;
+	height: 16px;
+	width: 16px;
+	bottom: 15px;
+}
+
+#contain-ctn #contain-like-title{
+	position: absolute;
+	bottom: 5px;
+	left: 170px;
+	bottom: 15px;
 }
