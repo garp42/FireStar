@@ -66,6 +66,40 @@ $(function(){
 		$('#search-bar').css('border-bottom', '2px solid silver');
 	});
 
+	//Register.php
+	$('#username').focus(function(){
+		$('#username').css('border-color', '#E47516');
+	});
+	$('#username').blur(function(){
+		$('#username').css('border-color', 'rgba(0,0,0,0.2');
+	});
+	$('#email').focus(function(){
+		$('#email').css('border-color', '#E47516');
+	});
+	$('#email').blur(function(){
+		$('#email').css('border-color', 'rgba(0,0,0,0.2');
+	});
+	$('#password').focus(function(){
+		$('#password').css('border-color', '#E47516');
+	});
+	$('#password').blur(function(){
+		$('#password').css('border-color', 'rgba(0,0,0,0.2');
+	});
+	$('#password2').focus(function(){
+		$('#password2').css('border-color', '#E47516');
+	});
+	$('#password2').blur(function(){
+		$('#password2').css('border-color', 'rgba(0,0,0,0.2');
+	});
+	$('#send-submit').mouseover(function(){
+		$('#send-submit').css('background-color', '#E47516');
+		$('#send-submit').css('color', 'white');
+	});
+	$('#send-submit').mouseout(function(){
+		$('#send-submit').css('background-color', 'white');
+		$('#send-submit').css('color', 'black');
+	});
+
 	// var array = ['img/stars-wallpaper.jpg', 'img/horizon-wallpaper.jpg', 'img/horizon-wallpaper2.jpg'];
 	// var count = -1;
 
