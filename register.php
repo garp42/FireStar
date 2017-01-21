@@ -1,12 +1,22 @@
 <?php
-    require('banner.php');
-    if(isset($_POST['username']) AND !empty($_POST['username'])
-      AND isset($_POST['email']) AND !empty($_POST['email'])
-      AND isset($_POST['password']) AND !empty($_POST['password'])){
-        $username = $_POST['username'];
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-        $req = $bdd->query("INSERT INTO user(id, email, username, password) VALUES('', '$email', '$username', '$password')");
+require('banner.php');
+    if(isset($_POST['envoyer'])){
+        $username = htmlspecialchars($_POST['username']);
+        $email = htmlspecialchars($_POST['email']);
+        $password = sha1($_POST['password']);
+        $password2 = sha1($_POST['password2']);
+        if(!empty($username) AND !empty($email) AND !empty($password) AND !empty($password2)){
+            if($password == $password2){
+            	$req = $bdd->prepare("INSERT INTO user(email, username, password, password2) VALUES(?, ?, ?, ?)");
+            	$req->execute(array($email, $username, $password, $password2));
+        	}
+        	else{
+        		$error_password = '<font color="red">Les mots de passes sont différents</font>';
+        	}
+        }
+        else{
+        	$error_register = '<font color="red">Veuillez remplir tous les champs</font>';
+        }
     }
 ?>
 
@@ -25,26 +35,32 @@
     <div id="account-register">
         <h6>Ou créer un compte : </h6>
 		<ul>
-            <?php 
-            if($req){
-                echo 'OK';
-            }
-            else{
-                echo 'NON';
-            }
-            ?>
             <form action="" method="post">
                 <li><label>Nom d'utilisateur</label>
-                <input type="text" placeholder="Nom d'utilisateur" name="username" id="username"></li>
+                <input type="text" name="username" id="username"></li>
                 <li><label>Email</label>
-                <input type="text" placeholder="Adresse email" name="email" id="email"></li>
+                <input type="email" name="email" id="email"></li>
                 <li><label>Mot de passe</label>
-                <input type="password" placeholder="Mot de passe" name="password" id="password"></li>
+                <input type="password" name="password" id="password"></li>
                 <li><label>Confirmer votre mot de passe</label>
-                <input type="password" placeholder="Confirmation mot de passe" name="password2" id="password2"></li>
+                <input type="password" name="password2" id="password2"></li>
                 <br/>
-                <li><input type="submit" value="Envoyer" id="send-submit"></li>
+                <li><input type="submit" value="Envoyer" name="envoyer" id="send-submit"></li>
             </form>
 		</ul>
     </div>
+    <div id="register-info">
+    	<h3>Pourquoi créer un compte ?</h3>
+        <ul>
+            <li><img src="icons/hd.png" height="40" width="40"> Avoir accès au contenu HD</li>
+            <li><img src="icons/infinity.png"> Regarder les vidéos en illimités</li>
+            <li><img src="icons/download.png"> Télécharger toutes les vidéos</li>
+            <li><img src="icons/like.png"> Aimer une vidéo</li>
+            <li><img src="icons/comment_001.png"> Commenter une vidéo</li>
+            <li><img src="icons/forum.png"> Discuter dans le forum</li>
+        </ul>
+    </div>
+</div>
+<div id="footer">
+    
 </div>

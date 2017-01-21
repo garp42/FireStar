@@ -94,10 +94,12 @@ $(function(){
 	$('#send-submit').mouseover(function(){
 		$('#send-submit').css('background-color', '#E47516');
 		$('#send-submit').css('color', 'white');
+		$('#send-submit').css('transition', '0.5s');
 	});
 	$('#send-submit').mouseout(function(){
 		$('#send-submit').css('background-color', 'white');
 		$('#send-submit').css('color', 'black');
+		$('#send-submit').css('transition', '0.5s');
 	});
 
 	// var array = ['img/stars-wallpaper.jpg', 'img/horizon-wallpaper.jpg', 'img/horizon-wallpaper2.jpg'];

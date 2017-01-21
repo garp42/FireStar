@@ -94,6 +94,14 @@ body{
 	height: 48px;
 }
 
+#footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: #5A5D85;
+}
+
 #wallpaper{
 	position: absolute;
 	width: 100%;
@@ -482,4 +490,32 @@ body{
 	font-size: 12px;
 	font-weight: bold;
 	padding: none;
+}
+
+#register-info{
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#register-info h3{
+    margin-left: 20px;
+	font-size: 1.5em;
+    color: #E47516;
+}
+
+#register-info img{
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+}
+
+#register-info li{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    list-style: none;
 }
