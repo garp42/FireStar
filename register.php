@@ -20,11 +20,11 @@ require('banner.php');
     }
 ?>
 
-<div id="register-title">
+<div class="register-title">
 	<h1>Créer un compte</h1>
-	<span>Déjà inscrit ? <a href="#"><font color="#5A5D85"><b>Connectez-vous</b></font></a></span>
+	<span>Déjà inscrit ? <a href="connexion.php"><font color="#5A5D85"><b>Connectez-vous</b></font></a></span>
 </div>
-<div id="register">
+<div class="register">
 	<div id="social-register">
         <h6>S'inscrire avec :</h6>
         <ul>
@@ -32,19 +32,23 @@ require('banner.php');
             <a href="#"><li><img src="icons/google+.png" alt="facebook" id="social-register-google"></li></a>
         </ul>
 	</div>
-    <div id="account-register">
+    <div class="account-register">
         <h6>Ou créer un compte : </h6>
 		<ul>
             <form action="" method="post">
                 <li><label>Nom d'utilisateur</label>
+                <br/><br/>
                 <input type="text" name="username" id="username"></li>
                 <li><label>Email</label>
+                <br/><br/>
                 <input type="email" name="email" id="email"></li>
                 <li><label>Mot de passe</label>
+                <br/><br/>
                 <input type="password" name="password" id="password"></li>
                 <li><label>Confirmer votre mot de passe</label>
+                <br/><br/>
                 <input type="password" name="password2" id="password2"></li>
-                <br/>
+                <br/><br/>
                 <li><input type="submit" value="Envoyer" name="envoyer" id="send-submit"></li>
             </form>
 		</ul>
@@ -61,6 +65,6 @@ require('banner.php');
         </ul>
     </div>
 </div>
-<div id="footer">
-    
-</div>
+<?php
+    require('footer.php');
+?>

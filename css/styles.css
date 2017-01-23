@@ -4,7 +4,7 @@ body{
 }
 
 #banner{
-	position: fixed;
+    position: relative;
 	width: 100%;
 	height: 80px;
 	background-color: #5A5D85;
@@ -29,19 +29,21 @@ body{
 
 #banner #account-title{
 	position: absolute;
-	right: 5%;
+	right: 4.8%;
 	bottom: -5px;
+    z-index: 2;
 }
 
 #banner #explorer-title{
 	position: absolute;
-	right: 11%;
+	right: 10.5%;
 	bottom: -5px;
+    z-index: 2;
 }
 
 #banner #logo{
 	position: absolute;
-	left: 250px;
+	left: 280px;
 	top: 10px;
 }
 
@@ -96,14 +98,35 @@ body{
 
 #footer{
     position: relative;
-    bottom: 0px;
     width: 100%;
     height: 80px;
     background-color: #5A5D85;
 }
 
-#wallpaper{
+#footer a{
+	text-decoration: none;
+}
+
+#footer ul{
 	position: absolute;
+	left: 20%;
+}
+
+#footer li{
+    display: inline;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 30px;
+}
+
+#footer li:hover{
+    color: #E47516;
+}
+
+#wallpaper{
+	position: relative;
 	width: 100%;
 	height: 95%;
 }
@@ -129,9 +152,8 @@ body{
 	font-weight: bold;
 }
 
-#wallpaper img{
-	position: absolute;
-	top: 80px;
+#wallpaper-img{
+	position: relative;
 	width: 100%;
 	height: 90%;
 }
@@ -246,9 +268,13 @@ body{
 	color: #E47516;
 }
 
+#main{
+    position: relative;
+    margin-top: 30px;
+}
+
 #top{
 	position: absolute;
-	top: 100%;
 	left: 100px;
 	height: 200px;
 	width: 300px;
@@ -302,7 +328,7 @@ body{
 
 #category{
 	position: absolute;
-	top: 130%;
+	top: 20%;
 	left: 100px;
 	height: 500px;
 	width: 300px;
@@ -323,7 +349,6 @@ body{
 
 #contain{
 	position: absolute;
-	top: 100%;
 	left: 450px;
 	height: 700px;
 	width: 60%;
@@ -401,9 +426,9 @@ body{
 	bottom: 15px;
 }
 
-#register-title{
-	position: absolute;
-	top: 30%;
+.register-title{
+    position: relative;
+	margin-top: 10%;
 	left: 15%;
 	height: 80px;
 	width: 75%;
@@ -411,7 +436,7 @@ body{
 	border-radius: 10px;
 }
 
-#register-title h1{
+.register-title h1{
 	position: absolute;
 	font-family: 'Open Sans', sans-serif;
 	left: 2%;
@@ -420,28 +445,30 @@ body{
 	color: #E47516;
 }
 
-#register-title span{
+.register-title span{
 	position: absolute;
 	right: 3%;
 	top: 40%;
 	color: rgba(0,0,0,0.8);
 }
 
-#register{
-	position: absolute;
-	top: 50%;
+.register{
+	position: relative;
+	margin-top: 5%;
 	left: 15%;
-	height: 100%;
-	width: 75%;
+    height: 850px;
+    width: 75%;
 	background-color: rgba(255,255,255, 0.3);
 	border-radius: 10px;
+    margin-bottom: 3%;
 }
 
-#register h6{
+.register h6{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: rgba(0,0,0,0.5);
     margin-left: 30px;
+    margin-top: 20px;
 }
 
 #social-register li{
@@ -452,23 +479,28 @@ body{
 #social-register img{
 	height: 64px;
     width: 64px;
+    opacity: 0.8;
+}
+
+#social-register img:hover{
+    opacity: 1;
 }
 
 #social-register #social-register-facebook{
     margin-left: 50px;
 }
 
-#account-register{
+.account-register{
     position: absolute;
     top: 25%;
 }
 
-#account-register li{
+.account-register li{
 	list-style: none;
 	margin-bottom: 30px;
 }
 
-#account-register input{
+.account-register input{
 	height: 40px;
 	width: 200px;
 	border-radius: 5px;
@@ -477,14 +509,14 @@ body{
 	padding-left: 8px;
 }
 
-#account-register input[type="submit"]{
+.account-register input[type="submit"]{
 	border-radius: 8px;
 	border: 1px solid #E47516;
 	cursor: pointer;
 	margin-left: 60px;
 }
 
-#account-register label{
+.account-register label{
 	margin-right: 10px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
@@ -495,9 +527,9 @@ body{
 #register-info{
     position: absolute;
     right: 10%;
-    top: 30%;
+    top: 20%;
     height: 400px;
-    width: 400px;
+    width: 450px;
     background-color: white;
     border-radius: 10px;
 }
@@ -518,4 +550,77 @@ body{
     font-size: 1.5em;
     margin-bottom: 20px;
     list-style: none;
+}
+
+#login-popup{
+    z-index: 55;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 300px;
+    height: 380px;
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#login-popup hr{
+    width: 80%;
+    color: silver;
+}
+
+#login-popup h2{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    opacity: 0.8;
+    color: #E47516;
+}
+
+#login-popup li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+#login-popup label{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#login-popup input{
+    height: 40px;
+	width: 200px;
+	border-radius: 5px;
+	border: 1px solid;
+	border-color: rgba(0,0,0,0.2);
+	padding-left: 8px;
+}
+
+#login-popup input[type="submit"]{
+    border-radius: 8px;
+	border: 1px solid #E47516;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+#login-popup input[type="submit"]:hover{
+    background-color: #E47516;
+    color: white;
+}
+
+#login-popup #social-connect img{
+    height: 64px;
+    width: 64px;
+    opacity: 0.8;
+}
+
+#login-popup #social-connect img:hover{
+    opacity: 1;
+}
+
+#login-popup #social-connect li{
+    display: inline;
+    margin-left: 30px;
 }

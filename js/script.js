@@ -13,6 +13,9 @@ $(function(){
 		$('#account-icon').attr('src', 'icons/account128.png');
 		$('#account-title').css('color', 'white');
 	});
+    $('#account-icon').click(function(){
+        $('#login-popup').css('display', 'block');
+    });
 	$('#account-title').mouseover(function(){
 		$('#account-title').css('color', '#E47516');
 		$('#account-icon').attr('src', 'icons/account128-hover.png');
@@ -90,6 +93,12 @@ $(function(){
 	});
 	$('#password2').blur(function(){
 		$('#password2').css('border-color', 'rgba(0,0,0,0.2');
+	});
+	$('#username_email').focus(function(){
+		$('#username_email').css('border-color', '#E47516');
+	});
+	$('#username_email').blur(function(){
+		$('#username_email').css('border-color', 'rgba(0,0,0,0.2');
 	});
 	$('#send-submit').mouseover(function(){
 		$('#send-submit').css('background-color', '#E47516');

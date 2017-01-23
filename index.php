@@ -25,28 +25,30 @@
 			<label>Pas encore inscrit ? <a href="register.php"><b>Créer un compte</b></a></label>
 		</div>
 	</div>
-	<div id="top">
-		<h3 id="top-title">Top</h3>
-		<ul id="top-list">
-			<a href="#"><li><img src="icons/eye.png" alt="most-viewed" id="most-viewed">
-			<span>Plus regardés</span></li></a>
-			<a href="#"><li><img src="icons/heart.png" alt="most-liked" id="most-liked">
-			<span>Plus aimés</span></li></a>
-			<a href="#"><li><img src="icons/comment.png" alt="most-commented" id="most-commented">
-			<span>Plus commentés</span></li></a>
-		</ul>
-	</div>
-	<div id="category">
-		<h3 id="category-title">Parcourir les catégories</h3>
-	</div>
-	<div id="contain">
-		<div id="contain-ctn">
-			<img src="img/narcos.jpg" alt="contain-img" id="contain-img">
-			<h3 id="contain-title">Narcos</h3>
-			<img src="icons/eye.png" alt="view" id="contain-view"><span id="contain-view-title">1580</span>
-			<img src="icons/comment.png" alt="comment" id="contain-comment"><span id="contain-comment-title">56</span>
-			<img src="icons/heart.png" alt="like" id="contain-like"><span id="contain-like-title">125</span>
-		</div>
-	</div>
+    <div id="main">
+        <div id="top">
+            <h3 id="top-title">Top</h3>
+            <ul id="top-list">
+                <a href="#"><li><img src="icons/eye.png" alt="most-viewed" id="most-viewed">
+                <span>Plus regardés</span></li></a>
+                <a href="#"><li><img src="icons/heart.png" alt="most-liked" id="most-liked">
+                <span>Plus aimés</span></li></a>
+                <a href="#"><li><img src="icons/comment.png" alt="most-commented" id="most-commented">
+                <span>Plus commentés</span></li></a>
+            </ul>
+        </div>
+        <div id="category">
+            <h3 id="category-title">Parcourir les catégories</h3>
+        </div>
+        <div id="contain">
+            <div id="contain-ctn">
+                <img src="img/narcos.jpg" alt="contain-img" id="contain-img">
+                <h3 id="contain-title">Narcos</h3>
+                <img src="icons/eye.png" alt="view" id="contain-view"><span id="contain-view-title">1580</span>
+                <img src="icons/comment.png" alt="comment" id="contain-comment"><span id="contain-comment-title">56</span>
+                <img src="icons/heart.png" alt="like" id="contain-like"><span id="contain-like-title">125</span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -24,3 +24,21 @@
 		<a href="#"><img src="icons/explorer128.png" alt="explorer-icon" id="explorer-icon"></a>
 		<a href="#category"><h3 id="explorer-title">EXPLORATION</h3></a>
 	</div>
+    <div id="login-popup">
+        <h2>Connexion</h2>
+        <ul>
+            <li><label>Nom d'utilisateur ou email</label>
+            <br/>
+            <input type="text" name="username" id="username"></li>
+            <li><label>Mot de passe</label>
+            <br/>
+            <input type="text" name="password" id="password"></li>
+            <br/>
+            <input type="submit" name="envoyer" class="envoyer">
+        </ul>
+        <hr>
+        <ul id="social-connect">
+            <a href="#"><li><img src="icons/facebook3.png" alt="facebook-connect" id="fcb-connect"></li></a>
+            <a href="#"><li><img src="icons/google+.png" alt="google-connect" id="ggl-connect"></li></a>
+        </ul>
+    </div>
