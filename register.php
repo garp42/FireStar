@@ -20,11 +20,11 @@ require('banner.php');
     }
 ?>
 
-<div class="register-title">
+<div id="register-title">
 	<h1>Créer un compte</h1>
 	<span>Déjà inscrit ? <a href="connexion.php"><font color="#5A5D85"><b>Connectez-vous</b></font></a></span>
 </div>
-<div class="register">
+<div id="register">
 	<div id="social-register">
         <h6>S'inscrire avec :</h6>
         <ul>
@@ -32,24 +32,24 @@ require('banner.php');
             <a href="#"><li><img src="icons/google+.png" alt="facebook" id="social-register-google"></li></a>
         </ul>
 	</div>
-    <div class="account-register">
+    <div id="account-register">
         <h6>Ou créer un compte : </h6>
 		<ul>
             <form action="" method="post">
                 <li><label>Nom d'utilisateur</label>
                 <br/><br/>
-                <input type="text" name="username" id="username"></li>
+                <input type="text" name="username" class="username"></li>
                 <li><label>Email</label>
                 <br/><br/>
-                <input type="email" name="email" id="email"></li>
+                <input type="email" name="email" class="email"></li>
                 <li><label>Mot de passe</label>
                 <br/><br/>
-                <input type="password" name="password" id="password"></li>
+                <input type="password" name="password" class="password"></li>
                 <li><label>Confirmer votre mot de passe</label>
                 <br/><br/>
-                <input type="password" name="password2" id="password2"></li>
+                <input type="password" name="password2" class="password2"></li>
                 <br/><br/>
-                <li><input type="submit" value="Envoyer" name="envoyer" id="send-submit"></li>
+                <li><input type="submit" value="Envoyer" name="envoyer" class="send-submit"></li>
             </form>
 		</ul>
     </div>

@@ -1,44 +1,58 @@
 $(function(){
 	$('#search-icon').mouseover(function(){
-		$('#search-icon').attr('src', 'icons/search64-hover.png');
+		$('#search-icon').attr('src', 'icons/search-hover.png');
 	});
 	$('#search-icon').mouseout(function(){
-		$('#search-icon').attr('src', 'icons/search64.png');
+		$('#search-icon').attr('src', 'icons/search.png');
 	});
 	$('#account-icon').mouseover(function(){
-		$('#account-icon').attr('src', 'icons/account128-hover.png');
+		$('#account-icon').attr('src', 'icons/account-hover.png');
 		$('#account-title').css('color', '#E47516');
 	});
 	$('#account-icon').mouseout(function(){
-		$('#account-icon').attr('src', 'icons/account128.png');
+		$('#account-icon').attr('src', 'icons/account.png');
 		$('#account-title').css('color', 'white');
 	});
     $('#account-icon').click(function(){
-        $('#login-popup').css('display', 'block');
+    	$('#login-popup').css('display', 'table');
+    	$('#login-popup').css('position', 'absolute');
+    	$('#popup-wallpaper').css('display', 'table');
+    	$('#footer').css('display', 'none');
+    	$('#top').css('display', 'none');
+    	$('#contain').css('display', 'none');
+    	$('#category').css('display', 'none');
+    });
+    $('#popup-wallpaper').click(function(){
+    	$('#login-popup').css('display', 'none');
+    	$('#popup-wallpaper').css('display', 'none');
+    	$('#footer').css('display', 'block');
+    	$('#top').css('display', 'block');
+    	$('#contain').css('display', 'block');
+    	$('#category').css('display', 'block');
     });
 	$('#account-title').mouseover(function(){
 		$('#account-title').css('color', '#E47516');
-		$('#account-icon').attr('src', 'icons/account128-hover.png');
+		$('#account-icon').attr('src', 'icons/account-hover.png');
 	});
 	$('#account-title').mouseout(function(){
 		$('#account-title').css('color', 'white');
-		$('#account-icon').attr('src', 'icons/account128.png');
+		$('#account-icon').attr('src', 'icons/account.png');
 	});
 	$('#explorer-icon').mouseover(function(){
-		$('#explorer-icon').attr('src', 'icons/explorer128-hover.png');
+		$('#explorer-icon').attr('src', 'icons/explorer-hover.png');
 		$('#explorer-title').css('color', '#E47516');
 	});
 	$('#explorer-icon').mouseout(function(){
-		$('#explorer-icon').attr('src', 'icons/explorer128.png');
+		$('#explorer-icon').attr('src', 'icons/explorer.png');
 		$('#explorer-title').css('color', 'white');
 	});
 	$('#explorer-title').mouseover(function(){
 		$('#explorer-title').css('color', '#E47516');
-		$('#explorer-icon').attr('src', 'icons/explorer128-hover.png');
+		$('#explorer-icon').attr('src', 'icons/explorer-hover.png');
 	});
 	$('#explorer-title').mouseout(function(){
 		$('#explorer-title').css('color', 'white');
-		$('#explorer-icon').attr('src', 'icons/explorer128.png');
+		$('#explorer-icon').attr('src', 'icons/explorer.png');
 	});
 
 	$('#login-facebook').mouseover(function(){
@@ -70,35 +84,35 @@ $(function(){
 	});
 
 	//Register.php
-	$('#username').focus(function(){
-		$('#username').css('border-color', '#E47516');
+	$('.username').focus(function(){
+		$('.username').css('border-color', '#E47516');
 	});
-	$('#username').blur(function(){
-		$('#username').css('border-color', 'rgba(0,0,0,0.2');
+	$('.username').blur(function(){
+		$('.username').css('border-color', 'rgba(0,0,0,0.2');
 	});
-	$('#email').focus(function(){
-		$('#email').css('border-color', '#E47516');
+	$('.email').focus(function(){
+		$('.email').css('border-color', '#E47516');
 	});
-	$('#email').blur(function(){
-		$('#email').css('border-color', 'rgba(0,0,0,0.2');
+	$('.email').blur(function(){
+		$('.email').css('border-color', 'rgba(0,0,0,0.2');
 	});
-	$('#password').focus(function(){
-		$('#password').css('border-color', '#E47516');
+	$('.password').focus(function(){
+		$('.password').css('border-color', '#E47516');
 	});
-	$('#password').blur(function(){
-		$('#password').css('border-color', 'rgba(0,0,0,0.2');
+	$('.password').blur(function(){
+		$('.password').css('border-color', 'rgba(0,0,0,0.2');
 	});
 	$('#password2').focus(function(){
 		$('#password2').css('border-color', '#E47516');
 	});
-	$('#password2').blur(function(){
-		$('#password2').css('border-color', 'rgba(0,0,0,0.2');
+	$('.password2').blur(function(){
+		$('.password2').css('border-color', 'rgba(0,0,0,0.2');
 	});
-	$('#username_email').focus(function(){
-		$('#username_email').css('border-color', '#E47516');
+	$('.username_email').focus(function(){
+		$('.username_email').css('border-color', '#E47516');
 	});
-	$('#username_email').blur(function(){
-		$('#username_email').css('border-color', 'rgba(0,0,0,0.2');
+	$('.username_email').blur(function(){
+		$('.username_email').css('border-color', 'rgba(0,0,0,0.2');
 	});
 	$('#send-submit').mouseover(function(){
 		$('#send-submit').css('background-color', '#E47516');

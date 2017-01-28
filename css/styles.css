@@ -14,7 +14,7 @@ body{
 
 #banner h1{
 	position: absolute;
-	left: 130px;
+	left: 160px;
 	top: 0px;
 	z-index: 2;
 }
@@ -29,14 +29,14 @@ body{
 
 #banner #account-title{
 	position: absolute;
-	right: 4.8%;
+	right: 5%;
 	bottom: -5px;
     z-index: 2;
 }
 
 #banner #explorer-title{
 	position: absolute;
-	right: 10.5%;
+	right: 11%;
 	bottom: -5px;
     z-index: 2;
 }
@@ -426,9 +426,9 @@ body{
 	bottom: 15px;
 }
 
-.register-title{
+#register-title{
     position: relative;
-	margin-top: 10%;
+	margin-top: 5%;
 	left: 15%;
 	height: 80px;
 	width: 75%;
@@ -436,7 +436,7 @@ body{
 	border-radius: 10px;
 }
 
-.register-title h1{
+#register-title h1{
 	position: absolute;
 	font-family: 'Open Sans', sans-serif;
 	left: 2%;
@@ -445,14 +445,14 @@ body{
 	color: #E47516;
 }
 
-.register-title span{
+#register-title span{
 	position: absolute;
 	right: 3%;
 	top: 40%;
 	color: rgba(0,0,0,0.8);
 }
 
-.register{
+#register{
 	position: relative;
 	margin-top: 5%;
 	left: 15%;
@@ -463,12 +463,17 @@ body{
     margin-bottom: 3%;
 }
 
-.register h6{
+#register h6{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: rgba(0,0,0,0.5);
     margin-left: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+#social-register{
+	position: absolute;
+	top: 20px;
 }
 
 #social-register li{
@@ -490,17 +495,17 @@ body{
     margin-left: 50px;
 }
 
-.account-register{
+#account-register{
     position: absolute;
     top: 25%;
 }
 
-.account-register li{
+#account-register li{
 	list-style: none;
 	margin-bottom: 30px;
 }
 
-.account-register input{
+#account-register input{
 	height: 40px;
 	width: 200px;
 	border-radius: 5px;
@@ -509,14 +514,14 @@ body{
 	padding-left: 8px;
 }
 
-.account-register input[type="submit"]{
+#account-register input[type="submit"]{
 	border-radius: 8px;
 	border: 1px solid #E47516;
 	cursor: pointer;
 	margin-left: 60px;
 }
 
-.account-register label{
+#account-register label{
 	margin-right: 10px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
@@ -554,7 +559,7 @@ body{
 
 #login-popup{
     z-index: 55;
-    position: absolute;
+    position: fixed;
     top: 20%;
     left: 40%;
     width: 300px;
@@ -562,6 +567,7 @@ body{
     display: none;
     background-color: white;
     border-radius: 10px;
+    opacity: 1;
 }
 
 #login-popup hr{
@@ -573,7 +579,7 @@ body{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    opacity: 0.8;
+    opacity: 1;
     color: #E47516;
 }
 
@@ -603,6 +609,7 @@ body{
 	border: 1px solid #E47516;
 	cursor: pointer;
 	margin-left: 10px;
+	background-color: white;
 }
 
 #login-popup input[type="submit"]:hover{
@@ -613,7 +620,7 @@ body{
 #login-popup #social-connect img{
     height: 64px;
     width: 64px;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 #login-popup #social-connect img:hover{
@@ -623,4 +630,14 @@ body{
 #login-popup #social-connect li{
     display: inline;
     margin-left: 30px;
+}
+
+#popup-wallpaper{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 110%;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 2000;
+	display: none;
 }

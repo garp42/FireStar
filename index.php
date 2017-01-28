@@ -1,7 +1,6 @@
 <?php
 	include('banner.php');
 ?>
-
 	<div id="wallpaper">
 		<img src="img/kingkong.jpg" alt="wallpaper" id="wallpaper-img">
 		<h1 id="wallpaper-title">KING KONG 2017</h1>
@@ -17,7 +16,7 @@
 				<span id="google-title">Connexion avec Google +</span>
 			</div></a>
 			<a href="#"><div id="login-mail">
-				<img src="icons/logo128.png" alt="mail" id="mail-icon">
+				<img src="icons/logo.png" alt="mail" id="mail-icon">
 				<span id="mail-title">Connexion normale</span>
 			</div></a>
 			<br/>
@@ -50,5 +49,6 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+<?php
+    require('footer.php');
+?>

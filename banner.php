@@ -16,29 +16,31 @@
 <body>
 	<div id="banner">
 		<a href="index.php"><h1><font color="#E47516">Fire</font><font color="white">Star</font></h1></a>
-		<a href="index.php"><img src="icons/logo64.png" alt="logo" id="logo"></a>
+		<a href="index.php"><img src="icons/logo.png" alt="logo" id="logo" height="64" width="64"></a>
 		<input type="search" name="search-bar" id="search-bar" placeholder="Entrez votre recherche...">
-		<a href="#"><img src="icons/search64.png" alt="search" id="search-icon"></a>
-		<a href="#"><img src="icons/account128.png" alt="account-icon" id="account-icon"></a>
+		<a href="#"><img src="icons/search.png" alt="search" id="search-icon"></a>
+		<a href="#"><img src="icons/account.png" alt="account-icon" id="account-icon"></a>
 		<a href="#"><h3 id="account-title">COMPTE</h3></a>
-		<a href="#"><img src="icons/explorer128.png" alt="explorer-icon" id="explorer-icon"></a>
+		<a href="#"><img src="icons/explorer.png" alt="explorer-icon" id="explorer-icon"></a>
 		<a href="#category"><h3 id="explorer-title">EXPLORATION</h3></a>
 	</div>
-    <div id="login-popup">
-        <h2>Connexion</h2>
-        <ul>
-            <li><label>Nom d'utilisateur ou email</label>
-            <br/>
-            <input type="text" name="username" id="username"></li>
-            <li><label>Mot de passe</label>
-            <br/>
-            <input type="text" name="password" id="password"></li>
-            <br/>
-            <input type="submit" name="envoyer" class="envoyer">
-        </ul>
-        <hr>
-        <ul id="social-connect">
-            <a href="#"><li><img src="icons/facebook3.png" alt="facebook-connect" id="fcb-connect"></li></a>
-            <a href="#"><li><img src="icons/google+.png" alt="google-connect" id="ggl-connect"></li></a>
-        </ul>
-    </div>
+	<div id="popup-wallpaper">
+	    <div id="login-popup">
+	        <h2>Connexion</h2>
+	        <ul>
+	            <li><label>Nom d'utilisateur ou email</label>
+	            <br/>
+	            <input type="text" name="username" class="username"></li>
+	            <li><label>Mot de passe</label>
+	            <br/>
+	            <input type="text" name="password" class="password"></li>
+	            <br/>
+	            <input type="submit" name="envoyer" class="envoyer">
+	        </ul>
+	        <hr>
+	        <ul id="social-connect">
+	            <a href="#"><li><img src="icons/facebook3.png" alt="facebook-connect" id="fcb-connect"></li></a>
+	            <a href="#"><li><img src="icons/google+.png" alt="google-connect" id="ggl-connect"></li></a>
+	        </ul>
+	    </div>
+	</div>
